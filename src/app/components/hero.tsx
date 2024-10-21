@@ -85,8 +85,10 @@ export default function HeroArea() {
                         <div className="text-center">
                             <h1 className="text-balance text-4xl font-medium text-white sm:text-6xl">{typedText}</h1>
                             <p className="mt-6 text-3xl leading-8 text-white">Code like an artist, debug like a warrior!</p>
-                            <div className="mt-10 flex items-center justify-center gap-x-6">
-                                <a href="#" className="rounded-md bg-cyan-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-cyan-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-800">Download my resume</a>
+                            <div className="mt-10 flex items-center justify-center gap-x-6 opacity-70 hover:opacity-90">
+                                <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-pink-200 rounded-lg group bg-gradient-to-br from-cyan-400 to-pink-500  hover:text-white dark:text-white focus:ring-2 focus:outline-none hover:from-cyan-600 hover:to-pink-800 focus:ring-pink-600 dark:focus:ring-purple-800">
+                                    <a href="/SabinaRasulovaResume.pdf" download className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-black dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 tracking-wide">Download my resume</a>
+                                </button>
                             </div>
                         </div>
                     </div>
