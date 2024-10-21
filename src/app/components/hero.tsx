@@ -1,24 +1,34 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import logoDark from "../../../public/SR logo dark bg.png";
 import keyboardImg from "../../../public/keyboard.jpg";
 import useTypingEffect from "../hooks/useTypingEffect";
+import { useState } from "react";
 
 export default function HeroArea() {
-    const text = "  I'm Sabina. I'm a Software Engineer."
-    const typedText = useTypingEffect(text, 100)
+    const text = "  I'm Sabina. I'm a Software Engineer.";
+    const typedText = useTypingEffect(text, 100);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen((prev) => !prev);
+    };
 
     return (
         <>
             <div className="">
                 <header className="absolute inset-x-0 top-0 z-50">
-                    <nav className="flex items-center justify-between py-6 max-w-7xl mx-auto" aria-label="Global">
+                    <nav className="flex items-center justify-between py-6 px-4 xl:px-0 max-w-7xl mx-auto" aria-label="Global">
                         <a href="#" className="-m-1.5 p-1.5">
-                            <Image className="h-14 w-auto" src={logoDark} alt="logo" />
+                            <Image className="h-10 lg:h-14 w-auto" src={logoDark} alt="logo" />
                         </a>
                         <div className="flex lg:hidden">
-                            <button type="button" className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400">
+                            <button
+                                type="button"
+                                className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
+                                onClick={toggleMenu}
+                            >
                                 <span className="sr-only">Open main menu</span>
                                 <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -33,32 +43,39 @@ export default function HeroArea() {
                         </div>
                     </nav>
 
-                    <div className="lg:hidden" role="dialog" aria-modal="true">
-                        <div className="fixed inset-0 z-50"></div>
-                        <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-cyan-950 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
-                            <div className="flex items-center justify-between">
-                                <a href="#" className="-m-1.5 p-1.5">
-                                    <Image className="h-8 w-auto" src={logoDark} alt="logo" />
-                                </a>
-                                <button type="button" className="-m-2.5 rounded-md p-2.5 text-gray-400">
-                                    <span className="sr-only">Close menu</span>
-                                    <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
-                                    </svg>
-                                </button>
-                            </div>
-                            <div className="mt-6 flow-root">
-                                <div className="-my-6 divide-y ">
-                                    <div className="space-y-2 py-6">
-                                        <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-white hover:bg-cyan-900">About me</a>
-                                        <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-white hover:bg-cyan-900">My tech stack</a>
-                                        <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-white hover:bg-cyan-900">Projects</a>
-                                        <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-white hover:bg-cyan-900">Contact me</a>
+                    {/* Mobile Menu */}
+                    {isMenuOpen && (
+                        <div className="lg:hidden" role="dialog" aria-modal="true">
+                            <div className="fixed inset-0 z-50"></div>
+                            <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-cyan-950 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
+                                <div className="flex items-center justify-between">
+                                    <a href="#" className="-m-1.5 p-1.5">
+                                        <Image className="h-8 w-auto" src={logoDark} alt="logo" />
+                                    </a>
+                                    <button
+                                        type="button"
+                                        className="-m-2.5 rounded-md p-2.5 text-gray-400"
+                                        onClick={toggleMenu}
+                                    >
+                                        <span className="sr-only">Close menu</span>
+                                        <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div className="mt-6 flow-root">
+                                    <div className="-my-6 divide-y ">
+                                        <div className="space-y-2 py-6">
+                                            <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-white hover:bg-cyan-900">About me</a>
+                                            <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-white hover:bg-cyan-900">My tech stack</a>
+                                            <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-white hover:bg-cyan-900">Projects</a>
+                                            <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-white hover:bg-cyan-900">Contact me</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    )}
                 </header>
 
                 <div className="relative isolate overflow-hidden pt-14">
