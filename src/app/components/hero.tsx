@@ -36,10 +36,10 @@ export default function HeroArea() {
                             </button>
                         </div>
                         <div className="hidden lg:flex lg:gap-x-12">
-                            <a href="#" className="text-sm font-semibold leading-6 text-white hover:text-fuchsia-300">About me</a>
-                            <a href="#" className="text-sm font-semibold leading-6 text-white hover:text-fuchsia-300">My tech stack</a>
-                            <a href="#" className="text-sm font-semibold leading-6 text-white hover:text-fuchsia-300">Projects</a>
-                            <a href="#" className="text-sm font-semibold leading-6 text-white hover:text-fuchsia-300">Contact me</a>
+                            <a href="#" className="text-sm font-semibold leading-6 text-white hover:text-cyan-300">About me</a>
+                            <a href="#" className="text-sm font-semibold leading-6 text-white hover:text-cyan-300">My tech stack</a>
+                            <a href="#" className="text-sm font-semibold leading-6 text-white hover:text-cyan-300">Projects</a>
+                            <a href="#" className="text-sm font-semibold leading-6 text-white hover:text-cyan-300">Contact me</a>
                         </div>
                     </nav>
 
