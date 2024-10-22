@@ -26,7 +26,7 @@ export default function MyTechStack() {
         <>
             <div className="bg-white my-8 sm:my-16">
                 <div className="mx-auto  max-w-7xl px-6 lg:px-8">
-                    <div className="flex max-w-2xl flex-col items-center justify-center gap-16 lg:mx-0 lg:max-w-none lg:flex-row h-auto">
+                    <div className="mx-auto flex max-w-2xl flex-col items-center justify-center gap-16 lg:mx-0 lg:max-w-none lg:flex-row h-auto">
                         <div className="w-full lg:max-w-xl lg:flex-auto">
                             <h2 className="text-3xl mb-10 font-bold tracking-wide text-cyan-600 sm:text-4xl">&#60;My Tech Stack &#47;&#62;</h2>
                             <p className="mt-6 mb-3  text-zinc-700">I’m well-versed in a variety of technologies that help me create both seamless user interfaces and robust backend systems.</p>

@@ -8,7 +8,7 @@ export default function AboutMe() {
         <>
             <div className="bg-white mt-20" id="aboutMe">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                    <div className="flex max-w-2xl flex-col items-center justify-center gap-16 lg:mx-0 lg:max-w-none lg:flex-row h-auto" >
+                    <div className="mx-auto flex max-w-2xl flex-col items-center justify-center gap-16 lg:mx-0 lg:max-w-none lg:flex-row h-auto" >
                         <div className="w-full lg:max-w-lg lg:flex-auto ">
                             <Image src={helloWorld} alt="" className="aspect-[3/4] w-auto rounded-md bg-gray-50 object-cover " />
                         </div>
