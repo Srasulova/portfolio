@@ -35,7 +35,7 @@ export default function Projects() {
 
     return (
         <>
-            <div className="bg-white pb-16">
+            <div className="bg-white pb-16" id="projects">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-4xl text-center">
                         <h2 className="text-3xl mb-10 font-bold tracking-wide text-cyan-600 sm:text-4xl">&#60;Projects &#47;&#62;</h2>

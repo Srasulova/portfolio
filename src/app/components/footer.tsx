@@ -13,7 +13,7 @@ export default function Footer() {
                     />
                     <div className="absolute inset-0 bg-black opacity-35"></div> {/* Dark tint layer */}
                 </div>
-                <div className='w-full h-2/5 py-16 px-2 sm:px-16 md:px-32 lg:px-56 text-center relative z-10'>
+                <div className='w-full h-2/5 pt-24 pb-14 px-2 sm:px-16 md:px-32 lg:px-56 text-center relative z-10'>
                     <p className="text-5xl font-semibold text-white">“Talk is cheap. Show me the code.”</p>
                     <p className="mt-6 text-xl leading-8 text-gray-100 tracking-wider italic">- Linus Torvalds</p>
                 </div>
@@ -21,13 +21,13 @@ export default function Footer() {
                 <div className="mx-auto max-w-7xl overflow-hidden px-6 pb-16 lg:px-8 relative z-10">
                     <nav className="-mb-6 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
                         <div className="pb-3">
-                            <a href="#" className="text-sm leading-6 text-zinc-100 hover:text-cyan-400">About me</a>
+                            <a href="#aboutMe" className="text-sm leading-6 text-zinc-100 hover:text-cyan-300">About me</a>
                         </div>
                         <div className="pb-3">
-                            <a href="#" className="text-sm leading-6 text-zinc-100 hover:text-cyan-400">Projects</a>
+                            <a href="#projects" className="text-sm leading-6 text-zinc-100 hover:text-cyan-300">Projects</a>
                         </div>
                         <div className="pb-3">
-                            <a href="#" className="text-sm leading-6 text-zinc-100 hover:text-cyan-400">Contacts</a>
+                            <a href="#contacts" className="text-sm leading-6 text-zinc-100 hover:text-cyan-300">Contacts</a>
                         </div>
                     </nav>
                     <div className="mt-6 flex items-center justify-center space-x-10">

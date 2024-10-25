@@ -36,10 +36,10 @@ export default function HeroArea() {
                             </button>
                         </div>
                         <div className="hidden lg:flex lg:gap-x-12">
-                            <a href="#" className="text-sm font-semibold leading-6 text-white hover:text-cyan-300">About me</a>
-                            <a href="#" className="text-sm font-semibold leading-6 text-white hover:text-cyan-300">My tech stack</a>
-                            <a href="#" className="text-sm font-semibold leading-6 text-white hover:text-cyan-300">Projects</a>
-                            <a href="#" className="text-sm font-semibold leading-6 text-white hover:text-cyan-300">Contact me</a>
+                            <a href="#aboutMe" className="text-sm font-semibold leading-6 text-white hover:text-cyan-300">About me</a>
+                            <a href="#myTechStack" className="text-sm font-semibold leading-6 text-white hover:text-cyan-300">My tech stack</a>
+                            <a href="#projects" className="text-sm font-semibold leading-6 text-white hover:text-cyan-300">Projects</a>
+                            <a href="#contacts" className="text-sm font-semibold leading-6 text-white hover:text-cyan-300">Contact me</a>
                         </div>
                     </nav>
 
@@ -66,10 +66,10 @@ export default function HeroArea() {
                                 <div className="mt-6 flow-root">
                                     <div className="-my-6 divide-y ">
                                         <div className="space-y-2 py-6">
-                                            <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-white hover:bg-cyan-900">About me</a>
-                                            <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-white hover:bg-cyan-900">My tech stack</a>
-                                            <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-white hover:bg-cyan-900">Projects</a>
-                                            <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-white hover:bg-cyan-900">Contact me</a>
+                                            <a href="#aboutMe" className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-white hover:bg-cyan-900">About me</a>
+                                            <a href="#myTechStack" className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-white hover:bg-cyan-900">My tech stack</a>
+                                            <a href="#projects" className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-white hover:bg-cyan-900">Projects</a>
+                                            <a href="#contacts" className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 text-white hover:bg-cyan-900">Contact me</a>
                                         </div>
                                     </div>
                                 </div>
@@ -81,7 +81,7 @@ export default function HeroArea() {
                 <div className="relative isolate overflow-hidden pt-14">
                     <Image src={keyboardImg} alt="" className="absolute inset-0 -z-10 h-full w-full object-cover" />
                     <div className="absolute inset-0 bg-black opacity-45"></div> {/* Dark tint layer */}
-                    <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-56 relative z-10">
+                    <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-52 relative z-10">
                         <div className="text-center">
                             <h1 className="text-balance text-4xl font-medium text-white sm:text-6xl">{typedText}</h1>
                             <p className="mt-6 text-3xl leading-8 text-white">Code like an artist, debug like a warrior!</p>
