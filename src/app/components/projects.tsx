@@ -37,7 +37,7 @@ export default function Projects() {
         <>
             <div className="bg-white pb-16">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                    <div className="mx-auto max-w-2xl text-center">
+                    <div className="mx-auto max-w-4xl text-center">
                         <h2 className="text-3xl mb-10 font-bold tracking-wide text-cyan-600 sm:text-4xl">&#60;Projects &#47;&#62;</h2>
                         <p className="mt-2 text-base text-zinc-700">I have more projects on GitHub, check them out and feel free to share your feedback.</p>
                     </div>
