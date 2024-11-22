@@ -1,7 +1,6 @@
 import Image from "next/image"
-import github from "../../../public/github-mark.png"
 
-export default function ProjectArticle(props: any) {
+export default function ProjectArticle(props: { img: string, title: string, description: string, teckStack: string, githubURL: string, url: string }) {
     return (
         <>
             <article className="flex flex-col items-start justify-between">
@@ -13,7 +12,7 @@ export default function ProjectArticle(props: any) {
                     <div className="mt-8 flex items-center gap-x-4 text-xs">
                         <a href={props.githubURL} className="github relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-zinc-600 hover:bg-fuchsia-100 flex items-center gap-3">
                             <i>
-                                <Image src={github} alt="github icon" className="w-5 h-5" />
+                                <Image src={'/github-mark.png'} alt="github icon" className="w-5 h-5" width={50} height={50} />
                             </i> View on Github</a>
                     </div>
                     <div className="group relative">

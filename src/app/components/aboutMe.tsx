@@ -1,16 +1,14 @@
 import Image from 'next/image'
-import helloWorld from "../../../public/helloWorld.jpeg"
-
 
 
 export default function AboutMe() {
     return (
         <>
-            <div className="bg-white mt-24" id="aboutMe">
+            <div className="bg-white my-8 sm:my-20" id="aboutMe">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto flex max-w-2xl flex-col items-center justify-center gap-16 lg:mx-0 lg:max-w-none lg:flex-row h-auto" >
                         <div className="w-full lg:max-w-lg lg:flex-auto ">
-                            <Image src={helloWorld} alt="" className="aspect-[3/4] w-auto rounded-md bg-gray-50 object-cover " />
+                            <Image src={'/helloWorld.jpeg'} alt="" className="aspect-[3/4] w-auto rounded-md bg-gray-50 object-cover" width={500} height={500} />
                         </div>
                         <div className="w-full lg:max-w-xl lg:flex-auto">
 
