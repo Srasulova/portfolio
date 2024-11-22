@@ -12,8 +12,19 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      animation: {
+        fadeInOut: "fadeInOut 3s infinite",
+      },
+      keyframes: {
+        fadeInOut: {
+          "0%": { opacity: "0" },
+          "50%": { opacity: "1" },
+          "100%": { opacity: "0" },
+        },
+      },
     },
   },
   plugins: [],
 };
+
 export default config;

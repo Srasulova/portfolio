@@ -9,6 +9,7 @@ import Projects from "./components/projects";
 import Footer from "./components/footer";
 import Contacts from "./components/contacts";
 
+
 export default function Home() {
   const [scrollDirection, setScrollDirection] = useState("down");
   const [hasScrolledDown, setHasScrolledDown] = useState(false); // Track if scrolled down
@@ -49,6 +50,7 @@ export default function Home() {
   return (
     <div>
       <main className="bg-white">
+
         <HeroArea />
 
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} variants={fadeInVariants}>
